@@ -56,7 +56,7 @@ Name the skill explicitly when you know it; otherwise describe the task.
 ### 3.1 Cursor (recommended)
 
 ```bash
-git clone <your-repo-url> ~/ai-skills/cns-skills
+git clone https://github.com/MermaidLiu/CNS-Skills.git ~/ai-skills/cns-skills
 cd ~/ai-skills/cns-skills
 chmod +x scripts/update-cursor-skills.sh
 ./scripts/update-cursor-skills.sh
@@ -73,8 +73,8 @@ Copy the **full skill directories** (including `references/`), not `SKILL.md` al
 ### 3.2 npx skills (when published)
 
 ```bash
-npx skills add <owner>/cns-skills --list
-npx skills add <owner>/cns-skills --global --agent codex --skill 'cns-*' --yes --copy
+npx skills add MermaidLiu/CNS-Skills --list
+npx skills add MermaidLiu/CNS-Skills --global --agent codex --skill 'cns-*' --yes --copy
 ```
 
 Include `cns-shared` when installing skills that depend on it.

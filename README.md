@@ -62,7 +62,7 @@
 **方式 A：安装脚本**
 
 ```bash
-git clone <your-repo-url> ~/ai-skills/cns-skills
+git clone https://github.com/MermaidLiu/CNS-Skills.git ~/ai-skills/cns-skills
 cd ~/ai-skills/cns-skills
 chmod +x scripts/update-cursor-skills.sh
 ./scripts/update-cursor-skills.sh
@@ -95,14 +95,14 @@ cp -r skills/cns-polishing skills/cns-writing skills/cns-reviewer \
 ### 3.2 `npx skills`（若已发布到 GitHub）
 
 ```bash
-npx skills add <owner>/cns-skills --list
-npx skills add <owner>/cns-skills --global --agent codex --skill 'cns-*' --yes --copy
+npx skills add MermaidLiu/CNS-Skills --list
+npx skills add MermaidLiu/CNS-Skills --global --agent codex --skill 'cns-*' --yes --copy
 ```
 
 安装 `cns-polishing` 等依赖共享包的 skill 时，同时安装 `cns-shared`：
 
 ```bash
-npx skills add <owner>/cns-skills --global --agent codex \
+npx skills add MermaidLiu/CNS-Skills --global --agent codex \
   --skill cns-polishing --skill cns-shared --yes --copy
 ```
 
