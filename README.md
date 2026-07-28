@@ -2,7 +2,7 @@
 
 [English](README_EN.md) · [Apache-2.0](LICENSE)
 
-`cns-skills` 收录面向 **Cell、Nature、Science** 及其常见子刊的可复用科研技能，强调 CNS 叙事习惯、可验证工作流与可直接使用的学术产物。项目结构参考 [nature-skills](https://github.com/Yuan1z0825/nature-skills)。
+`cns-skills` 收录面向 **Cell、Nature、Science** 及其常见子刊的可复用科研技能，强调 CNS 叙事习惯、可验证工作流与可直接使用的学术产物。
 
 ---
 
@@ -29,10 +29,6 @@
 3. **Claim–Evidence–Boundary**：不替作者发明数据、引用或显著性。
 4. **输出优先**：返回可粘贴文本、清单、图注 draft，而非空泛建议。
 5. **技能自包含**：每个 skill 独立目录；共享内容放在 `cns-shared`。
-
-### 1.3 与 nature-skills 的关系
-
-本仓库**参考** [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) 的目录结构与 README 组织方式，并**扩展**至 Cell、Science 系期刊。可与之配合使用：Nature 专项深度任务可用 upstream `nature-*` skills；三刊统一路由用本仓库 `cns-*`。
 
 ---
 
@@ -108,9 +104,16 @@ npx skills add MermaidLiu/CNS-Skills --global --agent codex \
 
 ### 3.3 Claude Code / Codex
 
-与 [nature-skills 安装说明](https://github.com/Yuan1z0825/nature-skills#5-安装) 相同：保留稳定 clone，用 subagent 或 wrapper 指向 `skills/<name>/SKILL.md`，并保留 `cns-shared`。
+保留稳定 clone，用 subagent 或 wrapper 指向 `skills/<name>/SKILL.md`，并保留 `cns-shared`。
 
 示例 wrapper 路径：`~/ai-skills/cns-skills/skills/cns-polishing/SKILL.md`
+
+更新仓库：
+
+```bash
+cd ~/ai-skills/cns-skills
+git pull
+```
 
 ---
 
@@ -149,7 +152,7 @@ scripts/
 
 1. 创建 `skills/cns-<topic>/`
 2. 添加 `SKILL.md`（frontmatter：`name`、`description`）
-3. 添加中英文 `README.md` / `README_EN.md`（结构镜像，见 nature-skills 贡献指南）
+3. 添加中英文 `README.md` / `README_EN.md`（章节结构镜像，见 [5.3 README 规范](#53-readme-规范单个-skill)）
 4. 更新上方 [技能索引](#4-技能索引)
 5. 状态标签：`Draft` / `Beta` / `Stable`
 
@@ -172,11 +175,6 @@ scripts/
 英文 README 章节一一对应。
 
 ---
-
-## 致谢
-
-- 目录与文档结构灵感来自 [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills)
-- 面向 **Cell · Nature · Science** 三刊生态扩展
 
 ## License
 

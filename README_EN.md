@@ -2,7 +2,7 @@
 
 [中文说明](README.md) · [Apache-2.0](LICENSE)
 
-`cns-skills` collects reusable research skills for **Cell**, **Nature**, **Science**, and common sub-journals—focused on CNS writing conventions, verifiable workflows, and paste-ready outputs. Layout inspired by [nature-skills](https://github.com/Yuan1z0825/nature-skills).
+`cns-skills` collects reusable research skills for **Cell**, **Nature**, **Science**, and common sub-journals—focused on CNS writing conventions, verifiable workflows, and paste-ready outputs.
 
 ---
 
@@ -29,10 +29,6 @@ Top-journal writing is not just “grammatically correct.” **Nature**, **Cell*
 3. **Claim–Evidence–Boundary** — never invent data, citations, or significance.
 4. **Output-first** — paste-ready text, checklists, legend drafts.
 5. **Self-contained skills** — shared material lives in `cns-shared`.
-
-### 1.3 Relationship to nature-skills
-
-This repo **follows** the [nature-skills](https://github.com/Yuan1z0825/nature-skills) layout and extends coverage to **Cell** and **Science**. Use upstream `nature-*` for deep Nature-only tasks; use `cns-*` for tri-journal routing.
 
 ---
 
@@ -101,14 +97,9 @@ Include `cns-shared` when installing skills that depend on it.
 2. Update the skill index
 3. Label status: `Draft` / `Beta` / `Stable`
 
-Per-skill READMEs must mirror EN/ZH section structure (see nature-skills contributing guide).
+Per-skill READMEs must mirror EN/ZH section structure (same headings, same order).
 
 ---
-
-## Acknowledgments
-
-- Layout and docs inspired by [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills)
-- Extended for the **Cell · Nature · Science** ecosystem
 
 ## License
 
